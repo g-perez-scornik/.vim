@@ -159,4 +159,4 @@ endfunction
 
 " Start the find and replace command across the entire file
 vmap <leader>z <Esc>:%s/<c-r>=GetVisual()<cr>/
-color desert
+set encoding=utf-8
