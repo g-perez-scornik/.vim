@@ -22,4 +22,6 @@ set iskeyword+=:
 call IMAP('DF', '\( <++> \)<++>', 'tex')
 call IMAP('ddx', '\ddx{<++>}{<++>}<++>','tex')
 call IMAP('ddn', '\ddxn{<++>}{<++>}{<++>}<++>','tex')
+call IMAP('vv', '\vec ', 'tex')
 let g:Tex_SmartKeyDot=0
+let g:Tex_CompileRule_dvi='latex -interaction=nonstopmode -file-line-error-style'
