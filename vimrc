@@ -160,3 +160,7 @@ endfunction
 " Start the find and replace command across the entire file
 vmap <leader>z <Esc>:%s/<c-r>=GetVisual()<cr>/
 set encoding=utf-8
+
+" Super cool regex for changing \[...\] to \begin{equation*}...\end{equation*}
+" (INCOMPLETE)
+" %s/\v\\\[((\_.){-})\\\]/\\begin\{equation\*\}\1\\end\{equation\*\}/gc
